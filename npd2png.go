@@ -37,7 +37,7 @@ func convert(inputFile string, outputFile string) error {
 		if err != nil {
 			return err
 		}
-		if n < width {
+		if n < len(buffer) {
 			break
 		}
 		col := 0

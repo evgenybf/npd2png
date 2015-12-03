@@ -20,7 +20,7 @@ def main(argv):
             row = 0
             while row < HEIGHT:
                 data = f.read(WIDTH * 3)
-                if not data or len(data) < WIDTH:
+                if not data or len(data) < WIDTH * 3:
                     break
                 col = 0
                 for i in xrange(0, len(data), 3):
